@@ -100,6 +100,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_core_walletprovider_.localwalletprovider.html#generatemnemonic" class="tsd-kind-icon">generate<wbr>Mnemonic</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_core_walletprovider_.localwalletprovider.html#getprivkeyfrommnemonic" class="tsd-kind-icon">get<wbr>Priv<wbr>Key<wbr>From<wbr>Mnemonic</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_core_walletprovider_.localwalletprovider.html#getpubkey" class="tsd-kind-icon">get<wbr>Pub<wbr>Key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_core_walletprovider_.localwalletprovider.html#getsigneraccounts" class="tsd-kind-icon">get<wbr>Signer<wbr>Accounts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_core_walletprovider_.localwalletprovider.html#sign" class="tsd-kind-icon">sign</a></li>
@@ -121,7 +123,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/cbd5c2f/src/core/walletProvider.ts#L36">core/walletProvider.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/a6ec290/src/core/walletProvider.ts#L37">core/walletProvider.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -141,6 +143,55 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="generatemnemonic" class="tsd-anchor"></a>
+					<h3>generate<wbr>Mnemonic</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Mnemonic<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/a6ec290/src/core/walletProvider.ts#L113">core/walletProvider.ts:113</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getprivkeyfrommnemonic" class="tsd-anchor"></a>
+					<h3>get<wbr>Priv<wbr>Key<wbr>From<wbr>Mnemonic</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Priv<wbr>Key<wbr>From<wbr>Mnemonic<span class="tsd-signature-symbol">(</span>bip44<span class="tsd-signature-symbol">: </span><a href="_core_bip44_.bip44.html" class="tsd-signature-type">BIP44</a>, mnemonic<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, change<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_crypto_types_.privkey.html" class="tsd-signature-type">PrivKey</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/a6ec290/src/core/walletProvider.ts#L120">core/walletProvider.ts:120</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bip44: <a href="_core_bip44_.bip44.html" class="tsd-signature-type">BIP44</a></h5>
+								</li>
+								<li>
+									<h5>mnemonic: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>change: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_crypto_types_.privkey.html" class="tsd-signature-type">PrivKey</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getpubkey" class="tsd-anchor"></a>
 					<h3>get<wbr>Pub<wbr>Key</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -151,7 +202,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_core_walletprovider_.walletprovider.html">WalletProvider</a>.<a href="../interfaces/_core_walletprovider_.walletprovider.html#getpubkey">getPubKey</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/cbd5c2f/src/core/walletProvider.ts#L59">core/walletProvider.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/a6ec290/src/core/walletProvider.ts#L59">core/walletProvider.ts:59</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -178,7 +229,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_core_walletprovider_.walletprovider.html">WalletProvider</a>.<a href="../interfaces/_core_walletprovider_.walletprovider.html#getsigneraccounts">getSignerAccounts</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/cbd5c2f/src/core/walletProvider.ts#L71">core/walletProvider.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/a6ec290/src/core/walletProvider.ts#L71">core/walletProvider.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -202,7 +253,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_core_walletprovider_.walletprovider.html">WalletProvider</a>.<a href="../interfaces/_core_walletprovider_.walletprovider.html#sign">sign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/cbd5c2f/src/core/walletProvider.ts#L92">core/walletProvider.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/a6ec290/src/core/walletProvider.ts#L92">core/walletProvider.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -231,7 +282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/cbd5c2f/src/core/walletProvider.ts#L47">core/walletProvider.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/a6ec290/src/core/walletProvider.ts#L45">core/walletProvider.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -272,6 +323,12 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="_core_walletprovider_.localwalletprovider.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_core_walletprovider_.localwalletprovider.html#generatemnemonic" class="tsd-kind-icon">generate<wbr>Mnemonic</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_core_walletprovider_.localwalletprovider.html#getprivkeyfrommnemonic" class="tsd-kind-icon">get<wbr>Priv<wbr>Key<wbr>From<wbr>Mnemonic</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_core_walletprovider_.localwalletprovider.html#getpubkey" class="tsd-kind-icon">get<wbr>Pub<wbr>Key</a>
