@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MsgBeginRedelegate | @node-a-team/cosmosjs</title>
+	<title>MsgSetWithdrawAddress | @node-a-team/cosmosjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_gaia_msgs_staking_.html">&quot;gaia/msgs/staking&quot;</a>
+					<a href="../modules/_x_distribution_msgs_.html">&quot;x/distribution/msgs&quot;</a>
 				</li>
 				<li>
-					<a href="_gaia_msgs_staking_.msgbeginredelegate.html">MsgBeginRedelegate</a>
+					<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html">MsgSetWithdrawAddress</a>
 				</li>
 			</ul>
-			<h1>Class MsgBeginRedelegate</h1>
+			<h1>Class MsgSetWithdrawAddress</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 						<a href="_core_tx_.msg.html" class="tsd-signature-type">Msg</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">MsgBeginRedelegate</span>
+								<span class="target">MsgSetWithdrawAddress</span>
 							</li>
 						</ul>
 					</li>
@@ -85,24 +85,22 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_gaia_msgs_staking_.msgbeginredelegate.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_gaia_msgs_staking_.msgbeginredelegate.html#amount" class="tsd-kind-icon">amount</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_gaia_msgs_staking_.msgbeginredelegate.html#delegatoraddress" class="tsd-kind-icon">delegator<wbr>Address</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_gaia_msgs_staking_.msgbeginredelegate.html#validatordstaddress" class="tsd-kind-icon">validator<wbr>Dst<wbr>Address</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_gaia_msgs_staking_.msgbeginredelegate.html#validatorsrcaddress" class="tsd-kind-icon">validator<wbr>Src<wbr>Address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#delegatoraddress" class="tsd-kind-icon">delegator<wbr>Address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#withdrawaddress" class="tsd-kind-icon">withdraw<wbr>Address</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_gaia_msgs_staking_.msgbeginredelegate.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_gaia_msgs_staking_.msgbeginredelegate.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_gaia_msgs_staking_.msgbeginredelegate.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a></li>
 							</ul>
 						</section>
 					</div>
@@ -114,13 +112,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Msg<wbr>Begin<wbr>Redelegate<span class="tsd-signature-symbol">(</span>delegatorAddress<span class="tsd-signature-symbol">: </span><a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a>, validatorSrcAddress<span class="tsd-signature-symbol">: </span><a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a>, validatorDstAddress<span class="tsd-signature-symbol">: </span><a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a>, amount<span class="tsd-signature-symbol">: </span><a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_gaia_msgs_staking_.msgbeginredelegate.html" class="tsd-signature-type">MsgBeginRedelegate</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Msg<wbr>Set<wbr>Withdraw<wbr>Address<span class="tsd-signature-symbol">(</span>delegatorAddress<span class="tsd-signature-symbol">: </span><a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a>, withdrawAddress<span class="tsd-signature-symbol">: </span><a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_x_distribution_msgs_.msgsetwithdrawaddress.html" class="tsd-signature-type">MsgSetWithdrawAddress</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/staking.ts#L236">gaia/msgs/staking.ts:236</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/distribution/msgs.ts#L16">x/distribution/msgs.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -129,16 +127,10 @@
 									<h5>delegatorAddress: <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a></h5>
 								</li>
 								<li>
-									<h5>validatorSrcAddress: <a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a></h5>
-								</li>
-								<li>
-									<h5>validatorDstAddress: <a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a></h5>
-								</li>
-								<li>
-									<h5>amount: <a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a></h5>
+									<h5>withdrawAddress: <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_gaia_msgs_staking_.msgbeginredelegate.html" class="tsd-signature-type">MsgBeginRedelegate</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_x_distribution_msgs_.msgsetwithdrawaddress.html" class="tsd-signature-type">MsgSetWithdrawAddress</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -146,42 +138,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="amount" class="tsd-anchor"></a>
-					<h3>amount</h3>
-					<div class="tsd-signature tsd-kind-icon">amount<span class="tsd-signature-symbol">:</span> <a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/staking.ts#L236">gaia/msgs/staking.ts:236</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="delegatoraddress" class="tsd-anchor"></a>
 					<h3>delegator<wbr>Address</h3>
 					<div class="tsd-signature tsd-kind-icon">delegator<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/staking.ts#L221">gaia/msgs/staking.ts:221</a></li>
+							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/distribution/msgs.ts#L11">x/distribution/msgs.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="validatordstaddress" class="tsd-anchor"></a>
-					<h3>validator<wbr>Dst<wbr>Address</h3>
-					<div class="tsd-signature tsd-kind-icon">validator<wbr>Dst<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a></div>
+					<a name="withdrawaddress" class="tsd-anchor"></a>
+					<h3>withdraw<wbr>Address</h3>
+					<div class="tsd-signature tsd-kind-icon">withdraw<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/staking.ts#L231">gaia/msgs/staking.ts:231</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="validatorsrcaddress" class="tsd-anchor"></a>
-					<h3>validator<wbr>Src<wbr>Address</h3>
-					<div class="tsd-signature tsd-kind-icon">validator<wbr>Src<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/staking.ts#L226">gaia/msgs/staking.ts:226</a></li>
+							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/distribution/msgs.ts#L16">x/distribution/msgs.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,14 +164,14 @@
 					<a name="getsignbytes" class="tsd-anchor"></a>
 					<h3>get<wbr>Sign<wbr>Bytes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sign<wbr>Bytes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sign<wbr>Bytes<span class="tsd-signature-symbol">(</span>codec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Codec</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#getsignbytes">getSignBytes</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/core/tx.ts#L29">core/tx.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/tx.ts#L29">core/tx.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -207,6 +179,12 @@
 									<p>Get the canonical byte representation of the Msg.</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codec: <span class="tsd-signature-type">Codec</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
 							<p>Return sorted by alphabetically amino encoded json by default.</p>
 						</li>
@@ -223,7 +201,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#getsigners">getSigners</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/staking.ts#L251">gaia/msgs/staking.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/distribution/msgs.ts#L24">x/distribution/msgs.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -241,7 +219,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#validatebasic">validateBasic</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/core/tx.ts#L24">core/tx.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/tx.ts#L24">core/tx.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -264,62 +242,44 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_gaia_msgs_staking_.html">"gaia/msgs/staking"</a>
+						<a href="../modules/_x_distribution_msgs_.html">"x/distribution/msgs"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_staking_.commissionmsg.html" class="tsd-kind-icon">Commission<wbr>Msg</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_staking_.description.html" class="tsd-kind-icon">Description</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_staking_.msgbeginredelegate.html" class="tsd-kind-icon">Msg<wbr>Begin<wbr>Redelegate</a>
+						<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html" class="tsd-kind-icon">Msg<wbr>Set<wbr>Withdraw<wbr>Address</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html#amount" class="tsd-kind-icon">amount</a>
+								<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#delegatoraddress" class="tsd-kind-icon">delegator<wbr>Address</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html#delegatoraddress" class="tsd-kind-icon">delegator<wbr>Address</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html#validatordstaddress" class="tsd-kind-icon">validator<wbr>Dst<wbr>Address</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html#validatorsrcaddress" class="tsd-kind-icon">validator<wbr>Src<wbr>Address</a>
+								<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#withdrawaddress" class="tsd-kind-icon">withdraw<wbr>Address</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a>
+								<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a>
+								<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a>
+								<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_staking_.msgcreatevalidator.html" class="tsd-kind-icon">Msg<wbr>Create<wbr>Validator</a>
+						<a href="_x_distribution_msgs_.msgwithdrawdelegatorreward.html" class="tsd-kind-icon">Msg<wbr>Withdraw<wbr>Delegator<wbr>Reward</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_staking_.msgdelegate.html" class="tsd-kind-icon">Msg<wbr>Delegate</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_staking_.msgeditvalidator.html" class="tsd-kind-icon">Msg<wbr>Edit<wbr>Validator</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_staking_.msgundelegate.html" class="tsd-kind-icon">Msg<wbr>Undelegate</a>
+						<a href="_x_distribution_msgs_.msgwithdrawvalidatorcommission.html" class="tsd-kind-icon">Msg<wbr>Withdraw<wbr>Validator<wbr>Commission</a>
 					</li>
 				</ul>
 			</nav>

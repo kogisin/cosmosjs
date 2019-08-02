@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;core/bech32Config&quot; | @node-a-team/cosmosjs</title>
+	<title>&quot;x/bank/codec&quot; | @node-a-team/cosmosjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_core_bech32config_.html">&quot;core/bech32Config&quot;</a>
+					<a href="_x_bank_codec_.html">&quot;x/bank/codec&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;core/bech32Config&quot;</h1>
+			<h1>External module &quot;x/bank/codec&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -67,15 +67,9 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_core_bech32config_.bech32config.html" class="tsd-kind-icon">Bech32<wbr>Config</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_core_bech32config_.html#defaultbech32config" class="tsd-kind-icon">default<wbr>Bech32<wbr>Config</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_x_bank_codec_.html#registercodec" class="tsd-kind-icon">register<wbr>Codec</a></li>
 							</ul>
 						</section>
 					</div>
@@ -84,37 +78,25 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="defaultbech32config" class="tsd-anchor"></a>
-					<h3>default<wbr>Bech32<wbr>Config</h3>
+					<a name="registercodec" class="tsd-anchor"></a>
+					<h3>register<wbr>Codec</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">default<wbr>Bech32<wbr>Config<span class="tsd-signature-symbol">(</span>mainPrefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, validatorPrefix<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, consensusPrefix<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, publicPrefix<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, operatorPrefix<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_core_bech32config_.bech32config.html" class="tsd-signature-type">Bech32Config</a></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Codec<span class="tsd-signature-symbol">(</span>codec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Codec</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/bech32Config.ts#L10">core/bech32Config.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/bank/codec.ts#L4">x/bank/codec.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>mainPrefix: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> validatorPrefix: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;val&quot;</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> consensusPrefix: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;cons&quot;</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> publicPrefix: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;pub&quot;</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> operatorPrefix: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;oper&quot;</span></h5>
+									<h5>codec: <span class="tsd-signature-type">Codec</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_core_bech32config_.bech32config.html" class="tsd-signature-type">Bech32Config</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -127,17 +109,14 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_core_bech32config_.html">"core/bech32<wbr>Config"</a>
+						<a href="_x_bank_codec_.html">"x/bank/codec"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_core_bech32config_.bech32config.html" class="tsd-kind-icon">Bech32<wbr>Config</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_core_bech32config_.html#defaultbech32config" class="tsd-kind-icon">default<wbr>Bech32<wbr>Config</a>
+						<a href="_x_bank_codec_.html#registercodec" class="tsd-kind-icon">register<wbr>Codec</a>
 					</li>
 				</ul>
 			</nav>

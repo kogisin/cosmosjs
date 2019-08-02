@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Coin | @node-a-team/cosmosjs</title>
+	<title>MsgDeposit | @node-a-team/cosmosjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_common_coin_.html">&quot;common/coin&quot;</a>
+					<a href="../modules/_x_gov_msgs_.html">&quot;x/gov/msgs&quot;</a>
 				</li>
 				<li>
-					<a href="_common_coin_.coin.html">Coin</a>
+					<a href="_x_gov_msgs_.msgdeposit.html">MsgDeposit</a>
 				</li>
 			</ul>
-			<h1>Class Coin</h1>
+			<h1>Class MsgDeposit</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Coin</span>
+						<a href="_core_tx_.msg.html" class="tsd-signature-type">Msg</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">MsgDeposit</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -80,20 +85,23 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_common_coin_.coin.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_x_gov_msgs_.msgdeposit.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_common_coin_.coin.html#amount" class="tsd-kind-icon">amount</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_common_coin_.coin.html#denom" class="tsd-kind-icon">denom</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x_gov_msgs_.msgdeposit.html#amount" class="tsd-kind-icon">amount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x_gov_msgs_.msgdeposit.html#depositor" class="tsd-kind-icon">depositor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x_gov_msgs_.msgdeposit.html#proposalid" class="tsd-kind-icon">proposal<wbr>Id</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_common_coin_.coin.html#parse" class="tsd-kind-icon">parse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_x_gov_msgs_.msgdeposit.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_x_gov_msgs_.msgdeposit.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_x_gov_msgs_.msgdeposit.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,25 +113,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Coin<span class="tsd-signature-symbol">(</span>denom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, amount<span class="tsd-signature-symbol">: </span><a href="_common_int_.int.html" class="tsd-signature-type">Int</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigInteger.BigNumber</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Msg<wbr>Deposit<span class="tsd-signature-symbol">(</span>proposalId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigInteger.BigNumber</span>, depositor<span class="tsd-signature-symbol">: </span><a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a>, amount<span class="tsd-signature-symbol">: </span><a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_x_gov_msgs_.msgdeposit.html" class="tsd-signature-type">MsgDeposit</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/common/coin.ts#L23">common/coin.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/gov/msgs.ts#L156">x/gov/msgs.ts:156</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>denom: <span class="tsd-signature-type">string</span></h5>
+									<h5>proposalId: <span class="tsd-signature-type">bigInteger.BigNumber</span></h5>
 								</li>
 								<li>
-									<h5>amount: <a href="_common_int_.int.html" class="tsd-signature-type">Int</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigInteger.BigNumber</span></h5>
+									<h5>depositor: <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a></h5>
+								</li>
+								<li>
+									<h5>amount: <a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_x_gov_msgs_.msgdeposit.html" class="tsd-signature-type">MsgDeposit</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -133,46 +144,99 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="amount" class="tsd-anchor"></a>
 					<h3>amount</h3>
-					<div class="tsd-signature tsd-kind-icon">amount<span class="tsd-signature-symbol">:</span> <a href="_common_int_.int.html" class="tsd-signature-type">Int</a></div>
+					<div class="tsd-signature tsd-kind-icon">amount<span class="tsd-signature-symbol">:</span> <a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/common/coin.ts#L23">common/coin.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/gov/msgs.ts#L156">x/gov/msgs.ts:156</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="denom" class="tsd-anchor"></a>
-					<h3>denom</h3>
-					<div class="tsd-signature tsd-kind-icon">denom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="depositor" class="tsd-anchor"></a>
+					<h3>depositor</h3>
+					<div class="tsd-signature tsd-kind-icon">depositor<span class="tsd-signature-symbol">:</span> <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/common/coin.ts#L20">common/coin.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/gov/msgs.ts#L147">x/gov/msgs.ts:147</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="proposalid" class="tsd-anchor"></a>
+					<h3>proposal<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">proposal<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigInteger.BigInteger</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/gov/msgs.ts#L142">x/gov/msgs.ts:142</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="parse" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> parse</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getsignbytes" class="tsd-anchor"></a>
+					<h3>get<wbr>Sign<wbr>Bytes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sign<wbr>Bytes<span class="tsd-signature-symbol">(</span>codec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Codec</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#getsignbytes">getSignBytes</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/common/coin.ts#L8">common/coin.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/tx.ts#L29">core/tx.ts:29</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the canonical byte representation of the Msg.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
+									<h5>codec: <span class="tsd-signature-type">Codec</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_common_coin_.coin.html" class="tsd-signature-type">Coin</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
+							<p>Return sorted by alphabetically amino encoded json by default.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getsigners" class="tsd-anchor"></a>
+					<h3>get<wbr>Signers</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Signers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#getsigners">getSigners</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/gov/msgs.ts#L175">x/gov/msgs.ts:175</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="validatebasic" class="tsd-anchor"></a>
+					<h3>validate<wbr>Basic</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Basic<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#validatebasic">validateBasic</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/gov/msgs.ts#L179">x/gov/msgs.ts:179</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -185,7 +249,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_common_coin_.html">"common/coin"</a>
+						<a href="../modules/_x_gov_msgs_.html">"x/gov/msgs"</a>
 					</li>
 				</ul>
 			</nav>
@@ -194,24 +258,45 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_common_coin_.coin.html" class="tsd-kind-icon">Coin</a>
+						<a href="_x_gov_msgs_.msgdeposit.html" class="tsd-kind-icon">Msg<wbr>Deposit</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_common_coin_.coin.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_x_gov_msgs_.msgdeposit.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_common_coin_.coin.html#amount" class="tsd-kind-icon">amount</a>
+								<a href="_x_gov_msgs_.msgdeposit.html#amount" class="tsd-kind-icon">amount</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_common_coin_.coin.html#denom" class="tsd-kind-icon">denom</a>
+								<a href="_x_gov_msgs_.msgdeposit.html#depositor" class="tsd-kind-icon">depositor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="_common_coin_.coin.html#parse" class="tsd-kind-icon">parse</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_x_gov_msgs_.msgdeposit.html#proposalid" class="tsd-kind-icon">proposal<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_x_gov_msgs_.msgdeposit.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_x_gov_msgs_.msgdeposit.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_x_gov_msgs_.msgdeposit.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_x_gov_msgs_.msgsubmitproposal.html" class="tsd-kind-icon">Msg<wbr>Submit<wbr>Proposal</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_x_gov_msgs_.msgvote.html" class="tsd-kind-icon">Msg<wbr>Vote</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_x_gov_msgs_.proposalkind.html" class="tsd-kind-icon">Proposal<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_x_gov_msgs_.voteoption.html" class="tsd-kind-icon">Vote<wbr>Option</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

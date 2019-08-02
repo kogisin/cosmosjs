@@ -76,13 +76,13 @@
 				<pre><code class="language-sh">npm install --save @node<span class="hljs-_">-a</span>-team/cosmosjs</code></pre>
 				<h2 id="how-to-use">How to use</h2>
 				<p>More examples will be provided <a href="https://github.com/node-a-team/cosmosjs/tree/master/example">here</a> soon.</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { GaiaApi } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/dist/gaia/api"</span>;
-<span class="hljs-keyword">import</span> { defaultBech32Config } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/dist/core/bech32Config"</span>;
-<span class="hljs-keyword">import</span> { LedgerWalletProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/dist/core/ledgerWallet"</span>;
-<span class="hljs-keyword">import</span> { MsgSend } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/dist/gaia/msgs/bank"</span>;
-<span class="hljs-keyword">import</span> { AccAddress, useGlobalBech32Config } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/dist/common/address"</span>;
-<span class="hljs-keyword">import</span> { Coin } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/dist/common/coin"</span>;
-<span class="hljs-keyword">import</span> { Int } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/dist/common/int"</span>;
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { GaiaApi } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/gaia/api"</span>;
+<span class="hljs-keyword">import</span> { defaultBech32Config } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/core/bech32Config"</span>;
+<span class="hljs-keyword">import</span> { LedgerWalletProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/core/ledgerWallet"</span>;
+<span class="hljs-keyword">import</span> { MsgSend } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/x/bank"</span>;
+<span class="hljs-keyword">import</span> { AccAddress, useGlobalBech32Config } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/common/address"</span>;
+<span class="hljs-keyword">import</span> { Coin } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/common/coin"</span>;
+<span class="hljs-keyword">import</span> { Int } <span class="hljs-keyword">from</span> <span class="hljs-string">"@node-a-team/cosmosjs/common/int"</span>;
 <span class="hljs-keyword">import</span> bigInteger <span class="hljs-keyword">from</span> <span class="hljs-string">"big-integer"</span>;
 
 <span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
@@ -98,7 +98,6 @@
 
   <span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> GaiaApi(<span class="hljs-params">{
     chainId: "cosmoshub-2",
-    bech32Config: defaultBech32Config(<span class="hljs-params">"cosmos"</span>),
     walletProvider: wallet,
     rpc: "http:<span class="hljs-comment">//localhost:26657",</span>
     rest: "http:<span class="hljs-comment">//localhost:1317"</span>
@@ -119,15 +118,14 @@
       <span class="hljs-comment">// If account number or sequence is omitted, they are calculated automatically</span>
       gas: bigInteger(<span class="hljs-params">60000</span>),
       memo: "test",
-      fee: <span class="hljs-keyword">new</span> Coin(<span class="hljs-params">"uatom", <span class="hljs-keyword">new</span> Int(<span class="hljs-params">"111"</span>)</span>),
-      gasPrice: 1
+      fee: <span class="hljs-keyword">new</span> Coin(<span class="hljs-params">"uatom", <span class="hljs-keyword">new</span> Int(<span class="hljs-params">"111"</span>)</span>)
     },
     "commit"
   </span>);
 }</span>)<span class="hljs-params">()</span>;</span></code></pre>
 				<h2 id="making-your-own-messages">Making your own messages</h2>
 				<p>Below is Gaia&#39;s basic sending message.
-				More examples are <a href="https://github.com/node-a-team/cosmosjs/tree/master/src/gaia/msgs">here</a>.</p>
+				More examples are <a href="https://github.com/node-a-team/cosmosjs/tree/master/src/x">here</a>.</p>
 				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Amino, Type } <span class="hljs-keyword">from</span> <span class="hljs-string">"ts-amino"</span>;
 <span class="hljs-keyword">const</span> { Field, Concrete, DefineStruct } = Amino;
 <span class="hljs-keyword">import</span> { Msg }  <span class="hljs-keyword">from</span> <span class="hljs-string">"../../core/tx"</span>;
@@ -225,6 +223,9 @@
 						<a href="modules/_common_baseaccount_.html">"common/base<wbr>Account"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_common_codec_.html">"common/codec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_common_coin_.html">"common/coin"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -273,6 +274,9 @@
 						<a href="modules/_core_walletprovider_.html">"core/wallet<wbr>Provider"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_crypto_codec_.html">"crypto/codec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_crypto_secp256k1_.html">"crypto/secp256k1"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -280,21 +284,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_gaia_api_.html">"gaia/api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_gaia_msgs_bank_.html">"gaia/msgs/bank"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_gaia_msgs_distribution_.html">"gaia/msgs/distribution"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_gaia_msgs_gov_.html">"gaia/msgs/gov"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_gaia_msgs_slashing_.html">"gaia/msgs/slashing"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_gaia_msgs_staking_.html">"gaia/msgs/staking"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_gaia_rest_.html">"gaia/rest"</a>
@@ -319,6 +308,36 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_utils_sortjson_.html">"utils/sort<wbr>Json"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_bank_codec_.html">"x/bank/codec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_bank_msgs_.html">"x/bank/msgs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_distribution_codec_.html">"x/distribution/codec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_distribution_msgs_.html">"x/distribution/msgs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_gov_codec_.html">"x/gov/codec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_gov_msgs_.html">"x/gov/msgs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_slashing_codec_.html">"x/slashing/codec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_slashing_msgs_.html">"x/slashing/msgs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_staking_codec_.html">"x/staking/codec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_x_staking_msgs_.html">"x/staking/msgs"</a>
 					</li>
 				</ul>
 			</nav>

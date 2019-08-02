@@ -72,43 +72,43 @@
 						<span class="target">Msg</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="_gaia_msgs_bank_.msgsend.html" class="tsd-signature-type">MsgSend</a>
+								<a href="_x_bank_msgs_.msgsend.html" class="tsd-signature-type">MsgSend</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_distribution_.msgsetwithdrawaddress.html" class="tsd-signature-type">MsgSetWithdrawAddress</a>
+								<a href="_x_distribution_msgs_.msgsetwithdrawaddress.html" class="tsd-signature-type">MsgSetWithdrawAddress</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_distribution_.msgwithdrawdelegatorreward.html" class="tsd-signature-type">MsgWithdrawDelegatorReward</a>
+								<a href="_x_distribution_msgs_.msgwithdrawdelegatorreward.html" class="tsd-signature-type">MsgWithdrawDelegatorReward</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_distribution_.msgwithdrawvalidatorcommission.html" class="tsd-signature-type">MsgWithdrawValidatorCommission</a>
+								<a href="_x_distribution_msgs_.msgwithdrawvalidatorcommission.html" class="tsd-signature-type">MsgWithdrawValidatorCommission</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_gov_.msgsubmitproposal.html" class="tsd-signature-type">MsgSubmitProposal</a>
+								<a href="_x_gov_msgs_.msgsubmitproposal.html" class="tsd-signature-type">MsgSubmitProposal</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_gov_.msgdeposit.html" class="tsd-signature-type">MsgDeposit</a>
+								<a href="_x_gov_msgs_.msgdeposit.html" class="tsd-signature-type">MsgDeposit</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_gov_.msgvote.html" class="tsd-signature-type">MsgVote</a>
+								<a href="_x_gov_msgs_.msgvote.html" class="tsd-signature-type">MsgVote</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_slashing_.msgunjail.html" class="tsd-signature-type">MsgUnjail</a>
+								<a href="_x_slashing_msgs_.msgunjail.html" class="tsd-signature-type">MsgUnjail</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_staking_.msgcreatevalidator.html" class="tsd-signature-type">MsgCreateValidator</a>
+								<a href="_x_staking_msgs_.msgcreatevalidator.html" class="tsd-signature-type">MsgCreateValidator</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_staking_.msgeditvalidator.html" class="tsd-signature-type">MsgEditValidator</a>
+								<a href="_x_staking_msgs_.msgeditvalidator.html" class="tsd-signature-type">MsgEditValidator</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_staking_.msgdelegate.html" class="tsd-signature-type">MsgDelegate</a>
+								<a href="_x_staking_msgs_.msgdelegate.html" class="tsd-signature-type">MsgDelegate</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_staking_.msgbeginredelegate.html" class="tsd-signature-type">MsgBeginRedelegate</a>
+								<a href="_x_staking_msgs_.msgbeginredelegate.html" class="tsd-signature-type">MsgBeginRedelegate</a>
 							</li>
 							<li>
-								<a href="_gaia_msgs_staking_.msgundelegate.html" class="tsd-signature-type">MsgUndelegate</a>
+								<a href="_x_staking_msgs_.msgundelegate.html" class="tsd-signature-type">MsgUndelegate</a>
 							</li>
 						</ul>
 					</li>
@@ -135,13 +135,13 @@
 					<a name="getsignbytes" class="tsd-anchor"></a>
 					<h3>get<wbr>Sign<wbr>Bytes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sign<wbr>Bytes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sign<wbr>Bytes<span class="tsd-signature-symbol">(</span>codec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Codec</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/core/tx.ts#L29">core/tx.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/tx.ts#L29">core/tx.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -149,6 +149,12 @@
 									<p>Get the canonical byte representation of the Msg.</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codec: <span class="tsd-signature-type">Codec</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
 							<p>Return sorted by alphabetically amino encoded json by default.</p>
 						</li>
@@ -164,7 +170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/core/tx.ts#L32">core/tx.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/tx.ts#L32">core/tx.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -181,7 +187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/core/tx.ts#L24">core/tx.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/tx.ts#L24">core/tx.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

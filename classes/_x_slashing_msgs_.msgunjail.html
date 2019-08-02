@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MsgVote | @node-a-team/cosmosjs</title>
+	<title>MsgUnjail | @node-a-team/cosmosjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_gaia_msgs_gov_.html">&quot;gaia/msgs/gov&quot;</a>
+					<a href="../modules/_x_slashing_msgs_.html">&quot;x/slashing/msgs&quot;</a>
 				</li>
 				<li>
-					<a href="_gaia_msgs_gov_.msgvote.html">MsgVote</a>
+					<a href="_x_slashing_msgs_.msgunjail.html">MsgUnjail</a>
 				</li>
 			</ul>
-			<h1>Class MsgVote</h1>
+			<h1>Class MsgUnjail</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 						<a href="_core_tx_.msg.html" class="tsd-signature-type">Msg</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">MsgVote</span>
+								<span class="target">MsgUnjail</span>
 							</li>
 						</ul>
 					</li>
@@ -85,23 +85,21 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_gaia_msgs_gov_.msgvote.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_x_slashing_msgs_.msgunjail.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_gaia_msgs_gov_.msgvote.html#option" class="tsd-kind-icon">option</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_gaia_msgs_gov_.msgvote.html#proposalid" class="tsd-kind-icon">proposal<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_gaia_msgs_gov_.msgvote.html#voter" class="tsd-kind-icon">voter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x_slashing_msgs_.msgunjail.html#validatoraddr" class="tsd-kind-icon">validator<wbr>Addr</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_gaia_msgs_gov_.msgvote.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_gaia_msgs_gov_.msgvote.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_gaia_msgs_gov_.msgvote.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_x_slashing_msgs_.msgunjail.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_x_slashing_msgs_.msgunjail.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_x_slashing_msgs_.msgunjail.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,28 +111,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Msg<wbr>Vote<span class="tsd-signature-symbol">(</span>proposalId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigInteger.BigNumber</span>, voter<span class="tsd-signature-symbol">: </span><a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a>, option<span class="tsd-signature-symbol">: </span><a href="_gaia_msgs_gov_.voteoption.html" class="tsd-signature-type">VoteOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_gaia_msgs_gov_.msgvote.html" class="tsd-signature-type">MsgVote</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Msg<wbr>Unjail<span class="tsd-signature-symbol">(</span>validatorAddr<span class="tsd-signature-symbol">: </span><a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_x_slashing_msgs_.msgunjail.html" class="tsd-signature-type">MsgUnjail</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/gov.ts#L206">gaia/msgs/gov.ts:206</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/slashing/msgs.ts#L11">x/slashing/msgs.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>proposalId: <span class="tsd-signature-type">bigInteger.BigNumber</span></h5>
-								</li>
-								<li>
-									<h5>voter: <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a></h5>
-								</li>
-								<li>
-									<h5>option: <a href="_gaia_msgs_gov_.voteoption.html" class="tsd-signature-type">VoteOption</a></h5>
+									<h5>validatorAddr: <a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_gaia_msgs_gov_.msgvote.html" class="tsd-signature-type">MsgVote</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_x_slashing_msgs_.msgunjail.html" class="tsd-signature-type">MsgUnjail</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -142,32 +134,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="option" class="tsd-anchor"></a>
-					<h3>option</h3>
-					<div class="tsd-signature tsd-kind-icon">option<span class="tsd-signature-symbol">:</span> <a href="_gaia_msgs_gov_.voteoption.html" class="tsd-signature-type">VoteOption</a></div>
+					<a name="validatoraddr" class="tsd-anchor"></a>
+					<h3>validator<wbr>Addr</h3>
+					<div class="tsd-signature tsd-kind-icon">validator<wbr>Addr<span class="tsd-signature-symbol">:</span> <a href="_common_address_.valaddress.html" class="tsd-signature-type">ValAddress</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/gov.ts#L206">gaia/msgs/gov.ts:206</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="proposalid" class="tsd-anchor"></a>
-					<h3>proposal<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">proposal<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigInteger.BigInteger</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/gov.ts#L196">gaia/msgs/gov.ts:196</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="voter" class="tsd-anchor"></a>
-					<h3>voter</h3>
-					<div class="tsd-signature tsd-kind-icon">voter<span class="tsd-signature-symbol">:</span> <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/gov.ts#L201">gaia/msgs/gov.ts:201</a></li>
+							<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/slashing/msgs.ts#L11">x/slashing/msgs.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -178,14 +150,14 @@
 					<a name="getsignbytes" class="tsd-anchor"></a>
 					<h3>get<wbr>Sign<wbr>Bytes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sign<wbr>Bytes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sign<wbr>Bytes<span class="tsd-signature-symbol">(</span>codec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Codec</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#getsignbytes">getSignBytes</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/core/tx.ts#L29">core/tx.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/tx.ts#L29">core/tx.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -193,6 +165,12 @@
 									<p>Get the canonical byte representation of the Msg.</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codec: <span class="tsd-signature-type">Codec</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
 							<p>Return sorted by alphabetically amino encoded json by default.</p>
 						</li>
@@ -209,27 +187,34 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#getsigners">getSigners</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/gov.ts#L225">gaia/msgs/gov.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/x/slashing/msgs.ts#L18">x/slashing/msgs.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_common_address_.accaddress.html" class="tsd-signature-type">AccAddress</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="validatebasic" class="tsd-anchor"></a>
 					<h3>validate<wbr>Basic</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">validate<wbr>Basic<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#validatebasic">validateBasic</a></p>
+								<p>Inherited from <a href="_core_tx_.msg.html">Msg</a>.<a href="_core_tx_.msg.html#validatebasic">validateBasic</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/c527a50/src/gaia/msgs/gov.ts#L229">gaia/msgs/gov.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/node-a-team/cosmosjs/blob/30a613c/src/core/tx.ts#L24">core/tx.ts:24</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>ValidateBasic does a simple validation check that
+										doesn&#39;t require access to any other information.
+									You can throw error in this when msg is invalid.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -243,54 +228,36 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_gaia_msgs_gov_.html">"gaia/msgs/gov"</a>
+						<a href="../modules/_x_slashing_msgs_.html">"x/slashing/msgs"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_gov_.msgdeposit.html" class="tsd-kind-icon">Msg<wbr>Deposit</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_gov_.msgsubmitproposal.html" class="tsd-kind-icon">Msg<wbr>Submit<wbr>Proposal</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_gov_.msgvote.html" class="tsd-kind-icon">Msg<wbr>Vote</a>
+						<a href="_x_slashing_msgs_.msgunjail.html" class="tsd-kind-icon">Msg<wbr>Unjail</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_gaia_msgs_gov_.msgvote.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_x_slashing_msgs_.msgunjail.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_gaia_msgs_gov_.msgvote.html#option" class="tsd-kind-icon">option</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_gaia_msgs_gov_.msgvote.html#proposalid" class="tsd-kind-icon">proposal<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_gaia_msgs_gov_.msgvote.html#voter" class="tsd-kind-icon">voter</a>
+								<a href="_x_slashing_msgs_.msgunjail.html#validatoraddr" class="tsd-kind-icon">validator<wbr>Addr</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_gaia_msgs_gov_.msgvote.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a>
+								<a href="_x_slashing_msgs_.msgunjail.html#getsignbytes" class="tsd-kind-icon">get<wbr>Sign<wbr>Bytes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_gaia_msgs_gov_.msgvote.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a>
+								<a href="_x_slashing_msgs_.msgunjail.html#getsigners" class="tsd-kind-icon">get<wbr>Signers</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_gaia_msgs_gov_.msgvote.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_x_slashing_msgs_.msgunjail.html#validatebasic" class="tsd-kind-icon">validate<wbr>Basic</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_gov_.proposalkind.html" class="tsd-kind-icon">Proposal<wbr>Kind</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_gaia_msgs_gov_.voteoption.html" class="tsd-kind-icon">Vote<wbr>Option</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
